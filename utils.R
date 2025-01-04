@@ -225,6 +225,12 @@ cpt.similarity <- function(model0, model1, control=cpt.control) {
   
   if(!lag %in% c(0,1,2)) stop('Now support only at most 2-session lags')
   
+  ## recover binary time series indicating changepoint locations
+  bin_0 <- rep(0, N)
+  bin_0[cpt0] <- 1
+  bin_1 <- rep(0, N)
+  bin_1[cpt1] <- 1
+  
   ## get similarity indices if no lag
   if(lag==0) {
     output <- similarity(bin_0, bin_1)
