@@ -81,7 +81,7 @@ source("run.R")
 ```
 
 ## License
-This project is licensed under the Apache 2.0 License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ## Acknowledgements
 - Killick, R., & Eckley, I. A. (2014). *changepoint*: An R package for changepoint analysis. *Journal of Statistical Software, 58*(3). https://doi.org/10.18637/jss.v058.i03
